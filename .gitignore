@@ -1,0 +1,52 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+
+# Logs
+logs
+*.log
+*.csv
+*.sqlite
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+.nyc_output/
+
+# Optional npm cache directory
+.npm/
+
+# React
+build/
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+.eggs/
+.env
+
+# Selenium
+chromedriver
+selenium-debug.log
+
+# IDE Specific
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+Thumbs.db
+.DS_Store
+
+
+trends.html

@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #0077ff;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0077ff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px; /* Adds spacing when the button is moved down */
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.results {
+  margin-top: 20px;
+  text-align: center; /* Center align trends */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center align content */
+}
+
+.results h3 {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.results ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 400px; /* Limit width for trends */
+  text-align: left;
+}
+
+.results li {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+strong {
+  color: #0077ff;
+}
+
+@media screen and (max-width: 768px) {
+  .results ul {
+    max-width: 90%; /* Adjust width for smaller screens */
+  }
+
+  button {
+    width: 80%; /* Make the button wider on smaller screens */
+  }
+}
