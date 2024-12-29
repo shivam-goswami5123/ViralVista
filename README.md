@@ -4,13 +4,13 @@ ViralVista is a full-stack web application that uses **Python Selenium** to scra
 
 ---
 
-## ✨ Features
+## 🧰 Technologies Used
 
-- 🔍 Scrapes trending topics from the **For You** page on Twitter (X).
-- 🌐 Uses **ProxyMesh** for secure proxy-based web scraping.
-- 🛢️ Saves trends to **MongoDB Atlas** for persistence.
-- 💻 Provides a **ReactJS** frontend to display trends.
-- ⚙️ Backend built with **Node.js and Express** to manage APIs.
+- **🐍 Python**: Web scraping using Selenium and BeautifulSoup.
+- **🌐 ProxyMesh**: Proxy provider for secure web scraping.
+- **🍃 MongoDB Atlas**: Cloud database for persistent data storage.
+- **🟢 Node.js + Express**: Backend API management.
+- **⚛️ ReactJS**: Frontend framework for displaying trends.
 
 ---
 
@@ -42,6 +42,8 @@ ViralVista/
 └── .gitignore                 # Git ignored files (e.g., node_modules, sensitive files)
 ```
 
+---
+
 ## 📦 Installation & Usage
 
 ```bash
@@ -63,15 +65,7 @@ pip install -r requirements.txt
 #Create a .env file in scrapper folder and copy the contents from .env.sample with your credentials in this file
 
 ```
-
-## 🧰 Technologies Used
-
-- **🐍 Python**: Web scraping using Selenium and BeautifulSoup.
-- **🌐 ProxyMesh**: Proxy provider for secure web scraping.
-- **🍃 MongoDB Atlas**: Cloud database for persistent data storage.
-- **🟢 Node.js + Express**: Backend API management.
-- **⚛️ ReactJS**: Frontend framework for displaying trends.
-
+---
 
 ## 🌟 Future Improvements
 
