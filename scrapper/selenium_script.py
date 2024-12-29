@@ -20,15 +20,15 @@ load_dotenv()
 MONGO_URI = os.getenv("MONGO_URI")
 TWITTER_USERNAME = os.getenv("TWITTER_USERNAME")
 TWITTER_PASSWORD = os.getenv("TWITTER_PASSWORD")
-# PROXY = os.getenv("PROXY")
+PROXY = os.getenv("PROXY")
 
 
 # Get the public IP address used for requests
 try:
     #With Proxy
-    #response = requests.get("https://httpbin.org/ip",proxies={"http": PROXY, "https": PROXY})
+    response = requests.get("https://httpbin.org/ip",proxies={"http": PROXY, "https": PROXY})
     #Without Proxy
-    response = requests.get("https://httpbin.org/ip")
+    # response = requests.get("https://httpbin.org/ip")
     proxy_ip = response.json().get("origin", "Unknown")
 except Exception as e:
     print(f"Error fetching IP: {e}")
@@ -45,16 +45,16 @@ collection = db['trends']  # Collection name
 
 #Set up Selenium with proxy
 
-# chrome_options = webdriver.ChromeOptions()
-# chrome_options.add_argument('--proxy-server=http://%s' % PROXY)
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument('--proxy-server=http://%s' % PROXY)
 
-# driver = webdriver.Chrome(options=chrome_options)
+driver = webdriver.Chrome(options=chrome_options)
 
 
 #Set up Selenium without proxy
-chrome_options = webdriver.ChromeOptions()
+# chrome_options = webdriver.ChromeOptions()
 
-driver = webdriver.Chrome(options=chrome_options)
+# driver = webdriver.Chrome(options=chrome_options)
 
 try:
     # Step 1: Open Twitter Login Page
